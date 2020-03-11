@@ -22,16 +22,19 @@ body
         margin-right: 33px
 
     &__menu
-        ul 
+        display: flex
+        list-style: none
+        margin: 0
+        padding: 0
+    &__item
+        padding: 0 17px
+        font-size: 20px
+        cursor: pointer
+        font-family: "Roboto-Bold"
+    &__gallery:hover 
+        background-color: #ffffff
+        .header__gallery-dropdown
             display: flex
-            list-style: none
-            margin: 0
-            padding: 0
-            font-family: "Roboto-Bold"
-            li 
-                padding: 0 17px
-                font-size: 20px
-                cursor: pointer
     &__enter
         flex-basis: 100%
         display: flex
@@ -44,6 +47,19 @@ body
         border: none
         background: #ffffff
         outline: none
+    &__gallery-dropdown
+        display: none
+        position: absolute
+        margin-left: -18px
+        padding: 13px 19px
+        background: #ffffff
+        flex-direction: column
+        list-style: none
+        border-radius: 5px
+        box-shadow: 0 0 5px #d1d1d1
+    &__gallery-dropdown li 
+        padding: 0
+        
 .title-left
     margin: 62px 0 20px
     font-family: "Roboto-bold"
