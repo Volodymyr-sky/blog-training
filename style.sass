@@ -1,7 +1,14 @@
+@font-face 
+    font-family: Roboto-Regular
+    src: url(fonts/roboto-regular.ttf)
+@font-face 
+    font-family: Roboto-Bold
+    src: url(fonts/roboto-bold.ttf)
 *
     box-sizing: border-box
 body
     margin: 0
+    font-family: "Roboto-Regular"
 .container
     width: 1252px
     margin: 0 auto
@@ -20,12 +27,22 @@ body
             list-style: none
             margin: 0
             padding: 0
+            font-family: "Roboto-Bold"
             li 
                 padding: 0 17px
+                font-size: 16px
+                cursor: pointer
     &__item
 
     &__enter
         flex-basis: 100%
         display: flex
         justify-content: flex-end
-    &__btn
+    &__btn        
+        font-family: "Roboto-Bold"        
+        cursor: pointer
+        font-size: 16px
+        padding: 20px 36px
+        border: none
+        background: #ffffff
+        outline: none
