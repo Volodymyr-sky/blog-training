@@ -6,4 +6,51 @@
 body {
   margin: 0;
 }
+
+.container {
+  width: 1252px;
+  margin: 0 auto;
+}
+
+.header__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  background: #cfe5ef;
+  padding: 43px 0;
+}
+
+.header__logo {
+  margin-right: 33px;
+}
+
+.header__menu ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.header__menu ul li {
+  padding: 0 17px;
+}
+
+.header__enter {
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
 /*# sourceMappingURL=style.css.map */
