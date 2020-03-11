@@ -122,6 +122,22 @@ body {
   margin: 9px 0;
 }
 
+.title-center {
+  text-align: center;
+  font-family: "Roboto-bold";
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.title-center__hr {
+  height: 5px;
+  width: 200px;
+  background-color: #c3c3c3;
+  border: none;
+  margin-top: 9px;
+  margin-bottom: 9px;
+}
+
 .row {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -196,6 +212,10 @@ body {
   width: 614px;
 }
 
+.reviews {
+  margin-bottom: 105px;
+}
+
 .reviews .title-left {
   padding-bottom: 9px;
 }
@@ -235,5 +255,50 @@ body {
 
 .review__hr {
   margin: 34px 0;
+}
+
+.gallery .row {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.gallery .row + .row {
+  margin-top: 54px;
+}
+
+.gallery__photo {
+  position: relative;
+  border: 1px solid #dcdcdc;
+  padding: 8px;
+  display: inline-block;
+  height: 273px;
+}
+
+.gallery__photo::before {
+  content: "";
+  position: absolute;
+  right: -1px;
+  top: -1px;
+  height: 9px;
+  width: 9px;
+  background-color: #ffffff;
+}
+
+.gallery__photo::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  bottom: -1px;
+  height: 9px;
+  width: 9px;
+  background-color: #ffffff;
+}
+
+.gallery__text {
+  padding-top: 21px;
+  padding-left: 9px;
+  font-family: "Roboto-bold";
+  font-size: 12px;
 }
 /*# sourceMappingURL=style.css.map */
