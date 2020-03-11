@@ -44,7 +44,6 @@ body
         border: none
         background: #ffffff
         outline: none
-.main
 .title-left
     margin: 62px 0 20px
     font-family: "Roboto-bold"
@@ -55,6 +54,8 @@ body
         background-color: #c3c3c3
         border: none
         margin: 9px 0 
+.row
+    display: flex
 .col
     background: #e2e2e2
     border: 1px solid #9f9f9f
@@ -62,8 +63,6 @@ body
 .col-left
     flex-grow: 1
 .grid
-    &__row
-        display: flex
     &__right-col-1
         width: 94px
     &__right-col-2
@@ -76,5 +75,24 @@ body
         width: 518px
     &__right-col-6
         width: 624px
+.grid-indent    
+    .col + .col
+        margin-left: 20px
+    .row + .row
+        margin-top: 20px
+    &__right-col-1
+        width: 84px
+    &__right-col-2
+        width: 190px
+    &__right-col-3
+        width: 296px
+    &__right-col-4
+        width: 402px
+    &__right-col-5
+        width: 508px
+    &__right-col-6
+        width: 614px
+
+
 
 
