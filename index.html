@@ -1,43 +1,77 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog</title>
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
     <header class="header">
-       <div class="container">
-        <div class="header__wrapper">
-            <div class="header__logo">
-                <img src="img/logo.jpg" alt="Logo">
-            </div>
-            <div class="header__menu">
-                <ul>
-                    <li class="header__item">РУБРИКИ</li>
-                    <li class="header__item">ГАЛЕРЕЯ</li>
-                    <li class="header__item">КОНТАКТЫ</li>
-                </ul>
-            </div>
-            <div class="header__enter">
-                <button class="header__btn">ВХОД</button>
+        <div class="container">
+            <div class="header__wrapper">
+                <div class="header__logo">
+                    <img src="img/logo.jpg" alt="Logo">
+                </div>
+                <div class="header__menu">
+                    <ul>
+                        <li class="header__item">РУБРИКИ</li>
+                        <li class="header__item">ГАЛЕРЕЯ</li>
+                        <li class="header__item">КОНТАКТЫ</li>
+                    </ul>
+                </div>
+                <div class="header__enter">
+                    <button class="header__btn">ВХОД</button>
+                </div>
             </div>
         </div>
-       </div>
     </header>
 
     <main class="main">
 
         <section class="grid">
-            <div class="title-left">
-                Сетка флоатов (12 позиций)
+            <div class="container">
+                <div class="title-left">
+                    Сетка флоатов (12 позиций)
+                    <hr class="title-left__hr">
+                </div>
+                <div class="grid__row">
+                    <div class="col col-left"></div>
+                    <div class="col grid__right-col-1"></div>
+                </div>
+                <div class="grid__row">
+                    <div class="col col-left"></div>
+                    <div class="col grid__right-col-2"></div>
+                </div>
+                <div class="grid__row">
+                    <div class="col col-left"></div>
+                    <div class="col grid__right-col-3"></div>
+                </div>
+                <div class="grid__row">
+                    <div class="col col-left"></div>
+                    <div class="col grid__right-col-4"></div>
+                </div>
+                <div class="grid__row">
+                    <div class="col col-left"></div>
+                    <div class="col grid__right-col-5"></div>
+                </div>
+                <div class="grid__row">
+                    <div class="col col-left"></div>
+                    <div class="col grid__right-col-6"></div>
+                </div>
             </div>
         </section>
 
-        <section class="grid">
-            
+        <section class="grid-indent">
+            <div class="container">
+                <div class="title-left">
+                    Сетка флоатов, с отступами
+                    <hr class="title-left__hr">
+                </div>
+            </div>
         </section>
 
         <section class="review">
@@ -49,6 +83,7 @@
         </section>
 
     </main>
-    
+
 </body>
+
 </html>
